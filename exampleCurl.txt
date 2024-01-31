@@ -1,0 +1,44 @@
+--- 
+get all transactions:
+
+curl --location --request GET 'http://0.0.0.0:3001/wallet/v1.0/transactions?walletId=3&limit=5&skip=0' \
+--header 'Content-Type: application/json' \
+--data '{
+   "amount": 10,
+    "description": "CREDIT"
+}
+'
+---
+post debit or credit
+
+curl --location 'http://0.0.0.0:3001/wallet/v1.0/transact/3' \
+--header 'Content-Type: application/json' \
+--data '{
+   "amount": 10,
+    "description": "CREDIT"
+}
+'
+
+
+---
+get wallet info
+
+curl --location --request GET 'http://0.0.0.0:3001/wallet/v1.0/wallet/3' \
+--header 'Content-Type: application/json' \
+--data '{
+   "amount": 10,
+    "description": "CREDIT"
+}
+'
+
+
+---
+setup wallet:
+
+curl --location 'http://0.0.0.0:3001/wallet/v1.0/setup-wallet' \
+--header 'Content-Type: application/json' \
+--data '{
+   "name": "Wallet name",
+    "initialBalance": 10
+}
+'
