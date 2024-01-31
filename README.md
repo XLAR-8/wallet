@@ -79,6 +79,7 @@ npm run start
 ``` yarn run dev ``` or start the production server: ``` yarn run start ```
 
 ### demo:
+- get curls from : examplecurl.txt file.
 
 [![Watch the video](https://img.youtube.com/vi/ThuroOHfuOE/0.jpg)](https://www.youtube.com/watch?v=ThuroOHfuOE)
 
